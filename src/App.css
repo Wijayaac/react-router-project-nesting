@@ -1,9 +1,35 @@
 .container {
   max-width: 71.25rem;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 2.5rem;
 }
 
 h1 {
   color: var(--pink);
+}
+
+.page-wrapper {
+  display: flex;
+}
+
+.sidebar {
+  flex: 0 0 30%;
+}
+
+.card-wrapper {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(4, 1fr)
+}
+
+.card {
+  padding: 1.25rem .63rem;
+  box-shadow: 0 0 0 1px var(--soft-pink);
+  text-decoration: none;
+  color: black;
+  transition: var(--motion);
+}
+
+.card:hover {
+  box-shadow: 0 0 0 2px var(--pink);
 }
