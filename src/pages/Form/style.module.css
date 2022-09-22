@@ -1,0 +1,30 @@
+.form {
+    position: relative;
+}
+
+.input {
+    position: relative;
+    margin-bottom: .75rem;
+}
+
+.input input {
+    border: 1px solid var(--pink);
+    outline: none;
+    background-color: transparent;
+    padding: .63rem 1.25rem;
+    border-radius: .25rem;
+}
+
+.input input:focus,
+.input input:active {
+    outline: none;
+}
+
+.input label {
+    display: block;
+}
+
+.error {
+    display: block;
+    color: red;
+}

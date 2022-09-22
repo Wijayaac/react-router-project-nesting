@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+import API_URL from "../../constant/API";
+
 const MemberDetail = () => {
   const { id } = useParams();
   const [member, setMember] = useState({});
 
   useEffect(() => {
     const getMember = async () => {
-      let serializedData = await fetch(
-        `https://jsonplaceholder.typicode.com/users/${id}`
-      );
+      let serializedData = await fetch(`${API_URL}/${id}`);
       let data = await serializedData.json();
-
       setMember(data);
     };
     getMember();

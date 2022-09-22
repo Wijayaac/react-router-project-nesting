@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Members from "./pages/Members";
 import Error from "./pages/404";
 import MemberDetail from "./pages/Members/MemberDetail";
+import Form from "./pages/Form";
 
 // root
 // sidebar
@@ -32,6 +33,7 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="members" element={<Members />}>
               <Route path=":id" element={<MemberDetail />} />
+              <Route path="add" element={<Form />} />
             </Route>
           </Route>
           <Route path="*" element={<Error />} />
